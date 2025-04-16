@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import streamlit as st
 from utils.xml_parser import parse_law_xml
 from utils.api_request import fetch_law_list, fetch_law_detail
